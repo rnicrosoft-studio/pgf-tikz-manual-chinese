@@ -1,3 +1,15 @@
+# Manual in Chinese for `pgf – A Portable Graphic Format for TeX`
+![CI](https://github.com/rnicrosoft-studio/pgf-tikz-manual-chinese/workflows/CI/badge.svg)
+
+Only consider about `xelatex`, `luatex` and `pdflatex` engines, and `xelatex` will have a higher priority at present.
+
+* Original source: https://github.com/pgf-tikz/pgf/tree/master/doc/generic/pgf
+* Original manual: https://github.com/pgf-tikz/pgf/releases
+* Translation source: https://github.com/rnicrosoft-studio/pgf-tikz-manual-chinese/tree/master/doc/generic/pgf
+* Translation release: https://github.com/rnicrosoft-studio/pgf-tikz-manual-chinese/releases
+
+---
+
 # pgf – A Portable Graphic Format for TeX
 
 ![CI](https://github.com/pgf-tikz/pgf/workflows/CI/badge.svg)
