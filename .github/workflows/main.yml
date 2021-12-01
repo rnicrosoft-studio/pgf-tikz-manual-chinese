@@ -111,7 +111,7 @@ jobs:
     - uses: actions/upload-artifact@v2
 #       if: matrix.engine == 'luatex'
       with:
-        name: pgfmanual
+        name: pgfmanual-${{ matrix.engine }}-zh
         path: doc/generic/pgf/version-for-${{ matrix.engine }}/zh/pgfmanual.pdf
 
 #     - name: "ZIP: Build"
