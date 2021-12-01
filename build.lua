@@ -164,10 +164,10 @@ local function manual()
     local engine = assert(arg[2], "Specify engine")
 
     local cwd = lfs.currentdir()
-    lfs.chdir("doc/generic/pgf/version-for-" .. engine .. "/en")
+    lfs.chdir("doc/generic/pgf/version-for-" .. engine .. "/zh")
 
     local TEXINPUTS = os.getenv("TEXINPUTS") or ""
-    os.setenv("TEXINPUTS", "../../text-en:../../images:" .. TEXINPUTS)
+    os.setenv("TEXINPUTS", "../../text-zh:../../images:" .. TEXINPUTS)
 
     -- Automatic rerun to get cross-references right
     local run = 0
