@@ -1,7 +1,14 @@
-# Manual in Chinese for `pgf – A Portable Graphic Format for TeX`
+# Manual in Chinese for `PGF/TikZ`
+
+`PGF/TikZ` 宏包使用手册中文译版
+
 ![CI](https://github.com/rnicrosoft-studio/pgf-tikz-manual-chinese/workflows/CI/badge.svg)
 
-Only consider about `luatex` and `xelatex` engines.
+This repository is forked from the official repository and uses the same `Github Action` workflow as the official does as CI tool,
+so that the latest release version can be obtained directly without compilation by yourself.
+And it will be more convenient for pull request (welcomed!) review.
+
+Only `luatex` and `xelatex` engines are considered in manual compilation.
 `luatex` is suggested by the original manual and will have a higher priority.
 Actually, the original source skipped some chapters in other engine's versions.
 
@@ -10,7 +17,29 @@ Actually, the original source skipped some chapters in other engine's versions.
 * Translation source: https://github.com/rnicrosoft-studio/pgf-tikz-manual-chinese/tree/master/doc/generic/pgf
 * Translation release: https://github.com/rnicrosoft-studio/pgf-tikz-manual-chinese/releases
 
+## Translation progress
+* [ ] 封面
+* [ ] 版权
+* [ ] 目录
+* [ ] 引言 Introduction
+* [ ] Part I - 教程和指南 Tutorials and Guidelines
+* [ ] Part II - 安装和配置 Installation and Configuration
+* [ ] Part III - TikZ 不是绘图程序 TikZ ist kein Zeichenprogramm
+* [ ] Part IV - 图形绘制 Graph Drawing
+* [ ] Part V - 库 Libraries
+* [ ] Part VI - 数据可视化 Data Visualization
+* [ ] Part VII - 工具 Utilities
+* [ ] Part VIII - 数学和面向对象引擎 Mathematical and Object-Oriented Engines
+* [ ] Part IX - 基础层 The Basic Layer
+* [ ] Part X - 系统层 The System Layer
+* [ ] Part XI - 引用和索引 References and Index
+
+## Reference
+* https://github.com/Hansimov/pgfmanual-zh Someone seems that have abandon the translation work
+
 ---
+
+## `README.md` in the original repository
 
 # pgf – A Portable Graphic Format for TeX
 
