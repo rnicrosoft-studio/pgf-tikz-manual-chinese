@@ -10,7 +10,7 @@ jobs:
     strategy:
       matrix:
 #         engine: [luatex, dvisvgm, dvipdfm, dvipdfmx, dvips, pdftex, xetex]
-        engine: [luatex, pdftex, xetex]
+        engine: [luatex, xetex]
 
     steps:
     - uses: actions/checkout@v2
