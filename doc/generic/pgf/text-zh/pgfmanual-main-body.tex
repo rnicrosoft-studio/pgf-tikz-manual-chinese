@@ -1,4 +1,4 @@
-% Copyright 2019 by Till Tantau
+% Copyright 2021 by rnicrosoft-studio
 %
 % This file may be distributed and/or modified
 %
@@ -47,7 +47,7 @@
     \nodeshadowed [at={(-5,5  )},yslant=0.05] {\Huge Ti\textcolor{orange}{\emph{k}}Z};
     \nodeshadowed [at={( 0,5.3)}] {\huge \textcolor{mintgreen}{\&}};
     \nodeshadowed [at={( 5,5  )},yslant=-0.05] {\Huge \textsc{PGF}};
-    \nodeshadowed [at={( 0,2  )}] {Manual for Version \pgftypesetversion};
+    \nodeshadowed [at={( 0,2  )}] {\pgftypesetversion 版本 使用手册};
 
     \foreach \where in {-9cm,9cm}
     {\nodeshadowed [at={(\where,5cm)}] {
@@ -222,8 +222,8 @@
 }
 
 
-\title{\bfseries The \tikzname\ and {\Large PGF} Packages\\
-  \large Manual for version \pgfversion\\[1mm]
+\title{\bfseries \tikzname\ 及 {\Large PGF} 宏包\\
+  \large \pgfversion  版本 使用手册\\[1mm]
 \large\href{https://github.com/pgf-tikz/pgf}{\texttt{https://github.com/pgf-tikz/pgf}}}
 \author{Till Tantau\footnote{Editor of this documentation. Parts of
     this documentation have been written by other authors as indicated
@@ -239,11 +239,11 @@
 \clearpage
 
 
-\include{pgfmanual-en-introduction}
+\include{pgfmanual-introduction}
 
 
 
-\part{Tutorials and Guidelines}
+\part{教程和指南 Tutorials and Guidelines}
 
 {\Large \emph{by Till Tantau}}
 
@@ -262,16 +262,16 @@ how you should proceed when creating graphics using \tikzname.
 \end{codeexample}
 
 
-\include{pgfmanual-en-tutorial}
-\include{pgfmanual-en-tutorial-nodes}
-\include{pgfmanual-en-tutorial-Euclid}
-\include{pgfmanual-en-tutorial-chains}
-\include{pgfmanual-en-tutorial-map}
-\include{pgfmanual-en-guidelines}
+\include{pgfmanual-tutorial}
+\include{pgfmanual-tutorial-nodes}
+\include{pgfmanual-tutorial-Euclid}
+\include{pgfmanual-tutorial-chains}
+\include{pgfmanual-tutorial-map}
+\include{pgfmanual-guidelines}
 
 
 
-\part{Installation and Configuration}
+\part{安装和配置 Installation and Configuration}
 
 {\Large \emph{by Till Tantau}}
 
@@ -317,13 +317,13 @@ read the present part.
 \end{codeexample}
 
 
-\include{pgfmanual-en-installation}
-\include{pgfmanual-en-license}
-\include{pgfmanual-en-drivers}
+\include{pgfmanual-installation}
+\include{pgfmanual-license}
+\include{pgfmanual-drivers}
 
 
 
-\part{Ti\emph{k}Z ist \emph{kein} Zeichenprogramm}
+\part{Ti\emph{k}Z 不是绘图程序（译注：德语） Ti\emph{k}Z ist \emph{kein} Zeichenprogramm}
 \label{part-tikz}
 
 {\Large \emph{by Till Tantau}}
@@ -364,26 +364,26 @@ read the present part.
 \end{codeexample}
 
 
-\include{pgfmanual-en-tikz-design}
-\include{pgfmanual-en-tikz-scopes}
-\include{pgfmanual-en-tikz-coordinates}
-\include{pgfmanual-en-tikz-paths}
-\include{pgfmanual-en-tikz-actions}
-\include{pgfmanual-en-tikz-arrows}
-\include{pgfmanual-en-tikz-shapes}
-\include{pgfmanual-en-tikz-pics}
-\include{pgfmanual-en-tikz-graphs}
-\include{pgfmanual-en-tikz-matrices}
-\include{pgfmanual-en-tikz-trees}
-\include{pgfmanual-en-tikz-plots}
-\include{pgfmanual-en-tikz-transparency}
-\include{pgfmanual-en-tikz-decorations}
-\include{pgfmanual-en-tikz-transformations}
-\include{pgfmanual-en-tikz-animations}
+\include{pgfmanual-tikz-design}
+\include{pgfmanual-tikz-scopes}
+\include{pgfmanual-tikz-coordinates}
+\include{pgfmanual-tikz-paths}
+\include{pgfmanual-tikz-actions}
+\include{pgfmanual-tikz-arrows}
+\include{pgfmanual-tikz-shapes}
+\include{pgfmanual-tikz-pics}
+\include{pgfmanual-tikz-graphs}
+\include{pgfmanual-tikz-matrices}
+\include{pgfmanual-tikz-trees}
+\include{pgfmanual-tikz-plots}
+\include{pgfmanual-tikz-transparency}
+\include{pgfmanual-tikz-decorations}
+\include{pgfmanual-tikz-transformations}
+\include{pgfmanual-tikz-animations}
 
 
 
-\part{Graph Drawing}
+\part{图形绘制 Graph Drawing}
 \label{part-gd}
 
 {\Large \emph{by Till Tantau et al.}}
@@ -425,28 +425,28 @@ implement new algorithms in the Lua programming language. \vskip1cm
 \fi
 
 
-\include{pgfmanual-en-gd-overview}
-\include{pgfmanual-en-gd-usage-tikz}
-\include{pgfmanual-en-gd-usage-pgf}
-\include{pgfmanual-en-gd-trees}
-\include{pgfmanual-en-gd-layered}
-\include{pgfmanual-en-gd-force}
-\include{pgfmanual-en-gd-circular}
-\include{pgfmanual-en-gd-phylogenetics}
-\include{pgfmanual-en-gd-edge-routing}
+\include{pgfmanual-gd-overview}
+\include{pgfmanual-gd-usage-tikz}
+\include{pgfmanual-gd-usage-pgf}
+\include{pgfmanual-gd-trees}
+\include{pgfmanual-gd-layered}
+\include{pgfmanual-gd-force}
+\include{pgfmanual-gd-circular}
+\include{pgfmanual-gd-phylogenetics}
+\include{pgfmanual-gd-edge-routing}
 %
 % XXX : disabled because of
 % 1. compile-time dependencies which are hard to resolve
 % 2. it is "hardly usable anyway" (TT)
-%\include{pgfmanual-en-gd-ogdf}
-\include{pgfmanual-en-gd-algorithm-layer}
-\include{pgfmanual-en-gd-algorithms-in-c}
-\include{pgfmanual-en-gd-display-layer}
-\include{pgfmanual-en-gd-binding-layer}
+%\include{pgfmanual-gd-ogdf}
+\include{pgfmanual-gd-algorithm-layer}
+\include{pgfmanual-gd-algorithms-in-c}
+\include{pgfmanual-gd-display-layer}
+\include{pgfmanual-gd-binding-layer}
 
 
 
-\part{Libraries}
+\part{库 Libraries}
 \label{part-libraries}
 
 {\Large \emph{by Till Tantau}}
@@ -519,49 +519,49 @@ libraries are not loaded by default since many users will not need them.
 \end{codeexample}
 
 
-\include{pgfmanual-en-library-3d}
-\include{pgfmanual-en-library-angles}
-\include{pgfmanual-en-library-arrows}
-\include{pgfmanual-en-library-automata}
-\include{pgfmanual-en-library-babel}
-\include{pgfmanual-en-library-backgrounds}
-\include{pgfmanual-en-library-calc}
-\include{pgfmanual-en-library-calendar}
-\include{pgfmanual-en-library-chains}
-\include{pgfmanual-en-library-circuits}
-\include{pgfmanual-en-library-decorations}
-\include{pgfmanual-en-library-er}
-\include{pgfmanual-en-library-external}
-\include{pgfmanual-en-library-fadings}
-\include{pgfmanual-en-library-fit}
-\include{pgfmanual-en-library-fixedpoint}
-\include{pgfmanual-en-library-fpu}
-\include{pgfmanual-en-library-lsystems}
-\include{pgfmanual-en-library-math}
-\include{pgfmanual-en-library-matrices}
-\include{pgfmanual-en-library-mindmaps}
-\include{pgfmanual-en-library-folding}
-\include{pgfmanual-en-library-patterns}
-\include{pgfmanual-en-library-perspective}
-\include{pgfmanual-en-library-petri}
-\include{pgfmanual-en-library-plot-handlers}
-\include{pgfmanual-en-library-plot-marks}
-\include{pgfmanual-en-library-profiler}
-\include{pgfmanual-en-library-rdf}
-\include{pgfmanual-en-library-shadings}
-\include{pgfmanual-en-library-shadows}
-\include{pgfmanual-en-library-shapes}
-\include{pgfmanual-en-library-spy}
-\include{pgfmanual-en-library-svg-path}
-\include{pgfmanual-en-library-edges}
-\include{pgfmanual-en-library-through}
-\include{pgfmanual-en-library-trees}
-\include{pgfmanual-en-library-turtle}
-\include{pgfmanual-en-library-views}
+\include{pgfmanual-library-3d}
+\include{pgfmanual-library-angles}
+\include{pgfmanual-library-arrows}
+\include{pgfmanual-library-automata}
+\include{pgfmanual-library-babel}
+\include{pgfmanual-library-backgrounds}
+\include{pgfmanual-library-calc}
+\include{pgfmanual-library-calendar}
+\include{pgfmanual-library-chains}
+\include{pgfmanual-library-circuits}
+\include{pgfmanual-library-decorations}
+\include{pgfmanual-library-er}
+\include{pgfmanual-library-external}
+\include{pgfmanual-library-fadings}
+\include{pgfmanual-library-fit}
+\include{pgfmanual-library-fixedpoint}
+\include{pgfmanual-library-fpu}
+\include{pgfmanual-library-lsystems}
+\include{pgfmanual-library-math}
+\include{pgfmanual-library-matrices}
+\include{pgfmanual-library-mindmaps}
+\include{pgfmanual-library-folding}
+\include{pgfmanual-library-patterns}
+\include{pgfmanual-library-perspective}
+\include{pgfmanual-library-petri}
+\include{pgfmanual-library-plot-handlers}
+\include{pgfmanual-library-plot-marks}
+\include{pgfmanual-library-profiler}
+\include{pgfmanual-library-rdf}
+\include{pgfmanual-library-shadings}
+\include{pgfmanual-library-shadows}
+\include{pgfmanual-library-shapes}
+\include{pgfmanual-library-spy}
+\include{pgfmanual-library-svg-path}
+\include{pgfmanual-library-edges}
+\include{pgfmanual-library-through}
+\include{pgfmanual-library-trees}
+\include{pgfmanual-library-turtle}
+\include{pgfmanual-library-views}
 
 
 
-\part{Data Visualization}
+\part{数据可视化 Data Visualization}
 \label{part-dv}
 
 {\Large \emph{by Till Tantau}}
@@ -596,18 +596,18 @@ data [format=function] {
 \end{codeexample}
 
 
-\include{pgfmanual-en-dv-introduction}
-\include{pgfmanual-en-dv-main}
-\include{pgfmanual-en-dv-formats}
-\include{pgfmanual-en-dv-axes}
-\include{pgfmanual-en-dv-visualizers}
-\include{pgfmanual-en-dv-stylesheets}
-\include{pgfmanual-en-dv-polar}
-\include{pgfmanual-en-dv-backend}
+\include{pgfmanual-dv-introduction}
+\include{pgfmanual-dv-main}
+\include{pgfmanual-dv-formats}
+\include{pgfmanual-dv-axes}
+\include{pgfmanual-dv-visualizers}
+\include{pgfmanual-dv-stylesheets}
+\include{pgfmanual-dv-polar}
+\include{pgfmanual-dv-backend}
 
 
 
-\part{Utilities}
+\part{工具 Utilities}
 \label{part-utilities}
 
 {\Large \emph{by Till Tantau}}
@@ -645,16 +645,16 @@ they can be used in a stand-alone way.
 \end{codeexample}
 
 
-\include{pgfmanual-en-pgfkeys}
-\include{pgfmanual-en-pgffor}
-\include{pgfmanual-en-pgfcalendar}
-\include{pgfmanual-en-pages}
-\include{pgfmanual-en-xxcolor}
-\include{pgfmanual-en-module-parser}
+\include{pgfmanual-pgfkeys}
+\include{pgfmanual-pgffor}
+\include{pgfmanual-pgfcalendar}
+\include{pgfmanual-pages}
+\include{pgfmanual-xxcolor}
+\include{pgfmanual-module-parser}
 
 
 
-\part{Mathematical and Object-Oriented Engines}
+\part{数学和面向对象引擎 Mathematical and Object-Oriented Engines}
 
 {\Large \emph{by Mark Wibrow and Till Tantau}}
 
@@ -701,16 +701,16 @@ inheritance), \emph{methods}, \emph{attributes} and \emph{objects}.
 \end{codeexample}
 
 
-\include{pgfmanual-en-math-design}
-\include{pgfmanual-en-math-parsing}
-\include{pgfmanual-en-math-commands}
-\include{pgfmanual-en-math-algorithms}
-\include{pgfmanual-en-math-numberprinting}
-\include{pgfmanual-en-oo}
+\include{pgfmanual-math-design}
+\include{pgfmanual-math-parsing}
+\include{pgfmanual-math-commands}
+\include{pgfmanual-math-algorithms}
+\include{pgfmanual-math-numberprinting}
+\include{pgfmanual-oo}
 
 
 
-\part{The Basic Layer}
+\part{基础层 The Basic Layer}
 
 {\Large \emph{by Till Tantau}}
 
@@ -746,30 +746,30 @@ inheritance), \emph{methods}, \emph{attributes} and \emph{objects}.
 \end{codeexample}
 
 
-\include{pgfmanual-en-base-design}
-\include{pgfmanual-en-base-scopes}
-\include{pgfmanual-en-base-points}
-\include{pgfmanual-en-base-paths}
-\include{pgfmanual-en-base-decorations}
-\include{pgfmanual-en-base-actions}
-\include{pgfmanual-en-base-arrows}
-\include{pgfmanual-en-base-nodes}
-\include{pgfmanual-en-base-matrices}
-\include{pgfmanual-en-base-transformations}
-\include{pgfmanual-en-base-patterns}
-\include{pgfmanual-en-base-images}
-\include{pgfmanual-en-base-external}
-\include{pgfmanual-en-base-plots}
-\include{pgfmanual-en-base-layers}
-\include{pgfmanual-en-base-shadings}
-\include{pgfmanual-en-base-transparency}
-\include{pgfmanual-en-base-animations}
-\include{pgfmanual-en-base-internalregisters}
-\include{pgfmanual-en-base-quick}
+\include{pgfmanual-base-design}
+\include{pgfmanual-base-scopes}
+\include{pgfmanual-base-points}
+\include{pgfmanual-base-paths}
+\include{pgfmanual-base-decorations}
+\include{pgfmanual-base-actions}
+\include{pgfmanual-base-arrows}
+\include{pgfmanual-base-nodes}
+\include{pgfmanual-base-matrices}
+\include{pgfmanual-base-transformations}
+\include{pgfmanual-base-patterns}
+\include{pgfmanual-base-images}
+\include{pgfmanual-base-external}
+\include{pgfmanual-base-plots}
+\include{pgfmanual-base-layers}
+\include{pgfmanual-base-shadings}
+\include{pgfmanual-base-transparency}
+\include{pgfmanual-base-animations}
+\include{pgfmanual-base-internalregisters}
+\include{pgfmanual-base-quick}
 
 
 
-\part{The System Layer}
+\part{系统层 The System Layer}
 \label{part-system}
 
 {\Large \emph{by Till Tantau}}
@@ -815,15 +815,15 @@ work.
 \end{codeexample}
 
 
-\include{pgfmanual-en-pgfsys-overview}
-\include{pgfmanual-en-pgfsys-commands}
-\include{pgfmanual-en-pgfsys-paths}
-\include{pgfmanual-en-pgfsys-protocol}
-\include{pgfmanual-en-pgfsys-animations}
+\include{pgfmanual-pgfsys-overview}
+\include{pgfmanual-pgfsys-commands}
+\include{pgfmanual-pgfsys-paths}
+\include{pgfmanual-pgfsys-protocol}
+\include{pgfmanual-pgfsys-animations}
 
 
 
-\part{References and Index}
+\part{引用和索引 References and Index}
 
 \vskip1cm
 \begin{codeexample}[graphic=white]

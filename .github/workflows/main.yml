@@ -39,6 +39,7 @@ jobs:
           colortbl
           courier
           ctablestack
+          ctex
           dvipdfmx
           dvips
           dvisvgm
