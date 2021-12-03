@@ -168,8 +168,7 @@ jobs:
 
     - name: "Release: upload manual"
       uses: actions/upload-release-asset@v1
-#       if: matrix.engine == 'luatex' && startsWith(github.ref, 'refs/tags/')
-      if: startsWith(github.ref, 'refs/tags/')
+      if: matrix.engine == 'luatex' && startsWith(github.ref, 'refs/tags/')
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
