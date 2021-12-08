@@ -25,14 +25,14 @@
 你继承了所有的缺点：陡峭的学习曲线，没有\textsc{wysiwyg}（所见即所得），小的更改需要很长时间重新编译，以及代码不能真正“展示”事情的样子。
 
 现在我们知道了什么是\tikzname，那么“\pgfname”呢？
-如前所述，\tikzname最初是一个实现\TeX图形宏的项目，既可以用于pdf\LaTeX，也可以用于经典的（基于PostScript）\LaTeX。
-换句话说，我希望为\TeX实现一种“portable graphics format（可移植的图形格式）”——因此命名为\pgfname。
-这些早期的宏仍然存在，它们构成了本手册中描述的系统的“基础层”，但一个作者目前大多数的交互是与\tikz进行的——它自己已经成为一门独立的语言。
+如前所述，\tikzname 最初是一个实现\TeX 图形宏的项目，既可以用于pdf\LaTeX，也可以用于经典的（基于PostScript）\LaTeX。
+换句话说，我希望为\TeX 实现一种“portable graphics format（可移植的图形格式）”——因此命名为\pgfname。
+这些早期的宏仍然存在，它们构成了本手册中描述的系统的“基础层”，但一个作者目前大多数的交互是与\tikzname 进行的——它自己已经成为一门独立的语言。
 
 
-\subsection{\tikzname之下的层}
+\subsection{\tikzname 之下的层}
 
-在\tikzname之下实际上有\emph{两个}层：
+在\tikzname 之下实际上有\emph{两个}层：
 %
 \begin{description}
     \item[System layer（系统层）：] This layer provides a complete abstraction of what
@@ -177,15 +177,15 @@ packages are:
 
 \subsection{如何阅读本使用手册}
 
-本使用手册介绍了\tikzname的设计和使用。
+本使用手册介绍了\tikzname 的设计和使用。
 章节组织是非常粗略地根据“用户友好性”进行的。
 首先介绍了最简单和最常用的命令和子包，稍后介绍更底层和更深奥的特性。
 
 如果你还没安装\tikzname，请先阅读安装部分。
 其次，阅读教程部分应该是个好主意。
-最后，你可能希望浏览下\tikzname的介绍。
+最后，你可能希望浏览下\tikzname 的介绍。
 通常，你不需要阅读基础层的部分。
-如果你打算编写自己的前端，或者你希望将\pgfname移植到一个新的驱动程序，你只需要阅读系统层的部分。
+如果你打算编写自己的前端，或者你希望将\pgfname 移植到一个新的驱动程序，你只需要阅读系统层的部分。
 
 系统提供的“public（公开）”命令和环境在全文中都有介绍。
 在每个这样的介绍中，所描述的命令、环境或选项都以红色打印。
@@ -195,32 +195,32 @@ packages are:
 \subsection{作者和致谢}
 \label{section-authors}
 
-大部分的\pgfname系统及其文档是由Till Tantau编写的。
-主要团队的另一名成员是Mark Wibrow，他负责例如\pgfname数学引擎、许多形状、装饰引擎和矩阵等。
+大部分的\pgfname 系统及其文档是由Till Tantau编写的。
+主要团队的另一名成员是Mark Wibrow，他负责例如\pgfname 数学引擎、许多形状、装饰引擎和矩阵等。
 第三个成员是Christian Feuers\"anger，他在手册中贡献了浮点库、图像外部化、扩展键处理和自动超链接等。
 
 此外，Christophe Jorssen、Jin-Hwan Cho、Olivier Binda、Matthias Schulz、Ren\'ee Ahrens、Stephan Schuster和Thomas Neumann等也偶有贡献。
 
-另外，许多人通过写电子邮件、发现缺陷或发送库和补丁为\pgfname系统做出了贡献。
+另外，许多人通过写电子邮件、发现缺陷或发送库和补丁为\pgfname 系统做出了贡献。
 非常感谢所有这些人，他们太多了，无法一一列举！
 
 
 \subsection{寻求帮助}
 
-当你需要关于\pgfname和\tikzname的帮助，请做如下工作：
+当你需要关于\pgfname 和\tikzname 的帮助，请做如下工作：
 
 \begin{enumerate}
     \item 阅读使用手册，至少是与你的问题有关的那部分。
-    \item 如果这不能解决问题，试着看下\pgfname和\tikzname的Github开发页面（参加本文档的标题处）。
+    \item 如果这不能解决问题，试着看下\pgfname 和\tikzname 的Github开发页面（参加本文档的标题处）。
         也许有人已经报告了类似的问题，有人已经找到了解决方案。
     \item 在网站上你可以找到许多寻求帮助的论坛。
         在那里，你可以发言来帮助论坛、提出缺陷报告、加入邮件列表等等。
     \item 在你提交缺陷报告，尤其是关于安装的缺陷报告之前，请确认这确实是一个缺陷。
-        特别是，看一下当你\TeX你的文件时生成的|.log|文件。
+        特别是，看一下当你\TeX 你的文件时生成的|.log|文件。
         这个|.log|文件应该显示所有正确的文件都是从正确的目录加载的。
         几乎所有的安装问题都可以通过查看|.log|文件来解决。
     \item \emph{作为最后一招}你可以试着给我（Till Tantau）发邮件，或者是Mark Wibrow，如果问题与数学引擎有关。
         我不介意收到邮件，我只是收到的邮件太多了。
         因此，我不能保证你的电子邮件将得到及时回复，甚至根本没有。
-        如果你将邮件发送到\pgfname邮件列表，那么你的问题得到解决的几率会更高一些（当然，当我有时间时，我会阅读这个邮件列表并回答问题）。
+        如果你将邮件发送到\pgfname 邮件列表，那么你的问题得到解决的几率会更高一些（当然，当我有时间时，我会阅读这个邮件列表并回答问题）。
 \end{enumerate}
