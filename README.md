@@ -18,10 +18,10 @@ Actually, the original source skipped some chapters in other engine's versions.
 * Translation release: https://github.com/rnicrosoft-studio/pgf-tikz-manual-chinese/releases
 
 ## Translation progress
-* [ ] 封面
-* [ ] 版权
-* [ ] 目录
-* [ ] 引言 Introduction
+* [x] 封面
+* [ ] (working) 版权
+* [ ] (working) 目录
+* [ ] (working) 引言 Introduction
 * [ ] Part I - 教程和指南 Tutorials and Guidelines
 * [ ] Part II - 安装和配置 Installation and Configuration
 * [ ] Part III - TikZ 不是绘图程序 TikZ ist kein Zeichenprogramm
